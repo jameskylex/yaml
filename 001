@@ -1,0 +1,676 @@
+## 1.2.3 Quiz (autograded, formative): Abstraction
+
+- typeName: multipleChoice
+  prompt: What are abstractions for?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on abstraction
+  options:
+    - answer: They are a way to help humans understand computers
+      isCorrect: true
+      feedback: by simplifying what a computer does, they make it easier to understand
+    - answer: They are a way to help computers understand humans
+      isCorrect: false
+      feedback: |-
+        it is hard for humans to understand computers, but it is even harder for
+        computers to understand humans, and abstractions don’t help
+    - answer: They are a way of making software run faster
+      isCorrect: false
+      feedback: |-
+        abstractions are not a feature of the software,
+        they are a way of thinking about software
+    - answer: They are a way of reducing the size of image files
+      isCorrect: false
+      feedback: |-
+        Abstract images are often easier to compress than realistic ones,
+        but that is not what we mean by abstractions. abstractions are not a
+        feature of the software, they are a way of thinking about software
+
+- typeName: multipleChoice
+  prompt: For which of these tasks would you need to think of a video in terms of numbers?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on layers of abstraction
+  options:
+    - answer: Writing video compression software
+      isCorrect: true
+      feedback: Compression algorithms typically work on low level features like numbers
+    - answer: Watching a video
+      isCorrect: false
+      feedback: |-
+        you don’t need to understand the fine details of a video just to watch it
+    - answer: Editing a video (i.e. cutting between different videos in editing software)
+      isCorrect: false
+      feedback: |-
+        you don’t need to understand how each individual image is represented
+    - answer: Embed a video in your website
+      isCorrect: false
+      feedback: |-
+        you need to know every little about a video to embed it
+
+- typeName: multipleChoice
+  prompt: For which of these tasks would you need to think of a video in terms of frames?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on layers of abstraction
+  options:
+    - answer: Writing video compression software
+      isCorrect: false
+      feedback: compression software needs to know a lot more detail than just frames
+    - answer: Watching a video
+      isCorrect: false
+      feedback: |-
+        you don’t need to understand the fine details of a video just to watch it
+    - answer: Editing a video (i.e. cutting between different videos in editing software)
+      isCorrect: true
+      feedback: |-
+        When you are cutting a video, you generally think it terms of frames
+    - answer: Embed a video in your website
+      isCorrect: false
+      feedback: |-
+        you need to know every little about a video to embed it
+
+- typeName: multipleChoice
+  prompt: |-
+    Abstractions are useful but videos are really always represented
+    as electrical charges in a microchip
+  shuffleOptions: false
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on abstraction
+  options:
+    - answer: True
+      isCorrect: false
+      feedback: |-
+        There is no single representation, even at the hardware level,
+        because things are represented differently in computer memory,
+        on hard discs and when transmitted over networks (among other things)
+
+    - answer: False
+      isCorrect: true
+      feedback: |-
+        There is no single representation, even at the hardware level,
+        because things are represented differently in computer memory,
+        on hard discs and when transmitted over networks (among other things)
+
+## NB reflective text questions aren't currently supported by the YAML format, so this may need to be manually imported
+##
+##- typeName: reflectivetext
+##  prompt: |-
+##    Can you think of an abstraction of how a computer as a whole works?
+##    Describe your abstraction of a computer
+##  feedback: |-
+##    There are many different abstractions of a computer: many ways of thinking about them.
+##    But we will look at one in the next lectures.
+
+## 1.3.4 Quiz (autograded, formative): States
+
+- typeName: multipleChoice
+  prompt: |-
+    How many states does a piece of software have?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on states
+  options:
+    - answer: Software can go through many different states
+      isCorrect: true
+      feedback: |-
+        yes, understanding the states of a piece of software are a
+        good way to understand that software
+
+    - answer: Each application corresponds to a single state
+      isCorrect: false
+      feedback: |-
+        states are different from applications
+
+    - answer: None, only operating systems have states
+      isCorrect: false
+      feedback: |-
+        operating systems are just another type of software, and all software has states.
+
+- typeName: multipleChoice
+  prompt: |-
+    What is the relationship between user input and states?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on states
+  options:
+    - answer: User input is one of several ways of changing a program state
+      isCorrect: true
+      feedback: |-
+        the state can also change for internal factors, like a video loading
+
+    - answer: User input is the only way that the state can change
+      isCorrect: false
+      feedback: |-
+        it is an important way but not the only way
+
+    - answer: User input cannot change the state
+      isCorrect: false
+      feedback: |-
+        user input often changes program state
+
+- typeName: checkbox
+  prompt: |-
+    Which of these is true of the current state of your word processor based on the cursor in
+    the image below.
+
+##[insert Topic1Fig1 here]
+  shuffleOptions: true
+  defaultFeedback: |-
+    This example has the cursor in some bullet point text, but that text is also bold
+    so two feature apply.
+
+    If you are confused by the answers, have another look at the video about why turning it
+    off and on again works
+  options:
+    - answer: Bullet points
+      isCorrect: true
+
+    - answer: Bold type
+      isCorrect: true
+
+    - answer: Heading
+      isCorrect: false
+
+    - answer: Selection
+      isCorrect: false
+
+- typeName: checkbox
+  prompt: |-
+    Which of these is true of the current state of your word processor based on the cursor in
+    the image below.
+
+##[insert Topic1Fig2 here]
+  shuffleOptions: true
+  defaultFeedback: |-
+    This example has the cursor in ordinary text, so none of the state examplss apply
+
+    If you are confused by the answers, have another look at the video about why turning it
+    off and on again works
+  options:
+    - answer: Bullet points
+      isCorrect: false
+
+    - answer: Bold type
+      isCorrect: false
+
+    - answer: Heading
+      isCorrect: false
+
+    - answer: Selection
+      isCorrect: true
+
+## NB reflective text questions aren't currently supported by the YAML format, so this may need to be manually imported
+
+##- typeName: reflectivetext
+##  prompt: |-
+##    Now we often buy things on the internet, and the e-commerce
+##    web sites typically go through a number of states as you buy something.
+##    Imagine buying a book online. What different states do you think
+##    the site goes through from the point you load the site to find
+##    the book to the moment you complete your purchase
+
+##  feedback: |-
+##    The next video will explain the states
+
+## 1.4.2  Quiz  (autograded, Summative): Files
+
+- typeName: multipleChoice
+  prompt: |-
+    What is meta-data?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on files
+  options:
+    - answer: data about a file
+      isCorrect: true
+      feedback: |-
+        yes, meta-data is important information that is not part of the content of the file
+        but about the file, like who owns it or when it was last modified
+    - answer: The content of a file
+      isCorrect: false
+      feedback: |-
+        No, meta-data means data about data, not the content itself
+    - answer: Data that is not in any particular file
+      isCorrect: false
+      feedback: |-
+        Meta-data is associatd with a particular file, though it is not the content of the file
+
+- typeName: multipleChoice
+  prompt: |-
+    You have been using an application and it crashes.
+
+    When you try to re-open the application, it fails to open with a message about
+    a file load error.
+
+    Is restarting the computer likely to help?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on files
+  options:
+    - answer: yes
+      isCorrect: true
+      feedback: |-
+        That's right. the problem is likely to be that a file was locked by the application and
+        stayed locked when it crashed, this is a common problem. An application locks a file to read from it,
+        but might crash before unlocking it. You can often fix this problem by
+        restarting the computer.
+
+        Another, worse possibility, is that the file has been corrupted by only being
+        partially written when it was saved. If it is a resource file, you might need to
+        reinstall the application. If it is a document, deleting or moving the file might stop
+        the application trying to open it (but obviously won't save the file)
+    - answer: no
+      isCorrect: false
+      feedback: |-
+        It won't always work, but the most likely explanation is that the file is still locked,
+        and that will be fixed by rest the computer
+
+- typeName: checkbox
+  prompt: |-
+    Which of the following are likely to happen if two applications write
+    to the same file at the same time?
+  shuffleOptions: true
+  defaultFeedback: |-
+    Lot's of things can go wrong if two applications try to access the same file
+    at the same time. That is why most operating systems lock files when one
+    application is using it so that no other application can access it.
+
+    If you are confused by the answers, have another look at the video on files
+  options:
+    - answer: The content of the file will become messed up
+      isCorrect: true
+      feedback: |-
+        yes, this is a likely occurance, the file will be a combination of
+        the data from the two applications in a random order
+    - answer: One of applications will have their data lost
+      isCorrect: true
+      feedback: |-
+        yes, this is actually one of the better outcomes.
+        If one application writes its data before the other starts, it's data will be lost
+    - answer: The file will be deleted
+      isCorrect: false
+      feedback: |-
+        This is unlikely
+
+- typeName: multipleChoice
+  prompt: |-
+    When you open a file in an application and edit it, but have not yet saved it, how many
+    copies are there of the data in the file?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on files
+  options:
+    - answer: 1 copy in memory
+      isCorrect: false
+      feedback: |-
+        The file will remain on the hard disc as well as in memory.
+    - answer: 1 copy in on your hard disc
+      isCorrect: false
+      feedback: |-
+        If a file has been loaded, it will also be in memory
+    - answer: 2 identical copies, one in memory and one on your hard disc
+      isCorrect: false
+      feedback: |-
+        If changes have not been saved, the copy in memory will be different from the one
+        on your hard disc
+    - answer: 2 different copies, one in memory and one on your hard disc
+      isCorrect: true
+      feedback: |-
+        Yes, the copy in memory will contain your changes, and the one on the hard disc will
+        be the original version
+
+## NB reflective text questions aren't currently supported by the YAML format, so this may need to be manually imported
+
+##- typeName: reflectivetext
+##  prompt: |-
+##    Files are something we work with as users of computer applications. We are used to working with our documents
+##    and editing them, but appliations also use a lot of other files, can you think of examples of files that an application
+##    might use but we, as users, aren't necessarily aware of?
+##
+##  feedback: |-
+##    The next videos will talk about how an application uses files
+
+## 1.4.7 Quiz  (autograded, formative): Debugging an Application Problem 
+
+- typeName: checkbox
+  prompt: |-
+      # Webpage load errors
+
+      When an application doesn't start properly, or fails to work in other ways
+      there are many possible causes, some due to the application
+      itself, others due to documents or other files.
+      By looking at the symptoms you can often tell what the problem is.
+
+      The following questions will go through some examples.
+
+      Firstly, which of these would happen if the problem was with the document
+      you are trying to load?
+
+      Click all that would be true, but before you submit, also think about which would
+      be the strongest sign that the problem is with your computer.
+  shuffleOptions: true
+  defaultFeedback: |-
+    If the problem is with a document, your application should work fine with other documents,
+    but nothing else is likely to make it work with that document
+
+    If you are unsure about any answers you should review the videos on files, modularity and applications.
+  options:
+  - answer: The application can load and edit other documents without a problem
+    isCorrect: true
+  - answer: |-
+      The application works fine once you restart your application
+    isCorrect: false
+  - answer: |-
+      The application works fine once you restart your computer
+    isCorrect: false
+  - answer: |-
+      Other, unrelated, applications have similar problems
+    isCorrect: false
+
+- typeName: checkbox
+  prompt: |-
+      Which of these would happen if the problem was that the application is in a strange state?
+
+      Click all that would be true, but before you submit, also think about which would
+      be the strongest sign that the problem is with your application state.
+  shuffleOptions: true
+  defaultFeedback: |-
+    Application state is a temporary thing that should be fixed with a restart (restarting
+    the application should be enough but restarting the whole computer should work)
+
+    If you are unsure about any answers you should review the videos on files, 
+    modularity and applications.
+  options:
+  - answer: The application can load and edit other documents without a problem
+    isCorrect: false
+  - answer: |-
+      The application works fine once you restart your application
+    isCorrect: true
+  - answer: |-
+      The application works fine once you restart your computer
+    isCorrect: true
+  - answer: |-
+      Other, unrelated, applications have similar problems
+    isCorrect: false
+
+- typeName: checkbox
+  prompt: |-
+    Which of these would happen if the problem was that your operating system is in a strange state? Click all that would be true, but before you submit, also think about which would be the strongest sign that the problem is with your operating system state.
+  shuffleOptions: true
+  defaultFeedback: |-
+    Like application state, operating system state (for example locked files) is temporary, but it will
+    only be fixed by restarting the computer. Also, unlike an application state problem, operating system state
+    might affect other applications (though a single locked file might not)
+
+    If you are unsure about any answers you should review the videos on files, modularity and applications.
+  options:
+  - answer: The application can load and edit other documents without a problem
+    isCorrect: false
+  - answer: |-
+      The application works fine once you restart your application
+    isCorrect: false
+  - answer: |-
+      The application works fine once you restart your computer
+    isCorrect: true
+  - answer: |-
+      Other applications have similar problems
+    isCorrect: true
+
+- typeName: checkbox
+  prompt: JAMESTEST Which of these would happen if the problem was that the application had a missing or corrupted resource file? Click all that would be true, but before you submit, also think about which would be the strongest sign that the problem is with your application files.
+  shuffleOptions: true
+  defaultFeedback: |-
+    This is one of the worse outcomes, none of the options really works and you are likely to need to reinstall the application.
+
+    If you are unsure about any answers you should review the videos on files, modularity and applications.
+  options:
+    - answer: The application can load and edit other documents without a problem
+      isCorrect: false
+    - answer: |-
+        The application works fine once you restart your application
+      isCorrect: false
+    - answer: |-
+        The application works fine once you restart your computer
+      isCorrect: false
+    - answer: |-
+        Other applications have similar problems
+      isCorrect: true
+
+## NB reflective text questions aren't currently supported by the YAML format, so this may need to be manually imported
+
+##- typeName: reflectivetext
+##  prompt: |-
+##    If you have a problem with an application, what setps would you go through to figure out
+##    what the problem is?
+##  feedback: |-
+##    Here are some examples:
+##      1. Check if you can load other documents
+##      2. Check if restarting the application works
+##      3. Check if restarting the computer works
+##      4. Check if you are having similar problems with other application
+##    Remember: change only one thing at a time.
+
+## 1.5.3.	Quiz  (autograded, summative): Topic Quiz
+
+- typeName: multipleChoice
+  prompt: How many abstractions are there for a particular piece of software?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on abstraction
+  options:
+    - answer: Many
+      isCorrect: true
+      feedback: different abstractions are useful for different things
+    - answer: None, abstractions only apply to hardware
+      isCorrect: false
+      feedback: |-
+        abstractions can be used for both hardware and software
+    - answer: There is only every 1 correct abstraction
+      isCorrect: false
+      feedback: |-
+        abstractions are not exact representations,
+        but simplifications, and there is normally
+        more than one way to simplify things
+
+- typeName: multipleChoice
+  prompt: What part of a computer performs calculations?
+  shuffleOptions: false
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on Computer Architecture
+  options:
+    - answer: CPU
+      isCorrect: true
+      feedback: yes, the Central Processing Unit is the chip that performs calculations
+    - answer: RAM
+      isCorrect: false
+      feedback: RAM, or main memory, just stores information
+    - answer: the notional machine
+      isCorrect: false
+      feedback: a notional machine is not part of a computer, it is a away of thinking about computers
+    - answer: hard disc
+      isCorrect: false
+      feedback: discs just store information
+
+- typeName: checkbox
+  prompt: |-
+    Which of these are example of file meta-data?
+  shuffleOptions: true
+  defaultFeedback: |- 
+    File meta-data is data about the file, but not the content of the file
+
+    If you are confused by the answers, have another look at the video on files
+  options:
+    - answer: The date the file was last modified
+      isCorrect: true
+    - answer: The text of an essay in a word processing document
+      isCorrect: false
+    - answer: The owner of a file
+      isCorrect: true
+    - answer: The pixels of an image
+      isCorrect: false
+
+- typeName: multipleChoice
+  prompt: The CPU interacts directly with data on your hard disc
+  shuffleOptions: false
+  defaultFeedback: |- 
+    Data is loaded into memory where the CPU can read it and make changes
+ 
+    If you are confused by the answers, have another look at the video on files
+  options:
+    - answer: true
+      isCorrect: false
+    - answer: false
+      isCorrect: true
+
+- typeName: checkbox
+  prompt: |-
+      Let's go back to the problem of debugging an application that doesn't work properly. 
+
+      Which of these would happen if the problem was with your computer hardware?
+
+      Click all that would be true, but before you submit, also think about which would
+      be the strongest sign that the problem is with your computer hardware.
+  shuffleOptions: true
+  defaultFeedback: |-
+    If lots of applications and affected, and restarting the computer doesn't works
+    you are likely to have a serious problem. It could be a major issue with your
+    operating system or with your hardware.
+
+    If you are unsure about any answers you should review the videos on files, modularity
+    and applications.
+  options:
+  - answer: The application can load and edit other documents without a problem
+    isCorrect: false
+  - answer: |-
+      The application works fine once you restart your application
+    isCorrect: false
+  - answer: |-
+      The application works fine once you restart your computer
+    isCorrect: false
+  - answer: |-
+      Other applications have similar problems
+    isCorrect: true
+
+- typeName: checkbox
+  prompt: |-
+    Which of these is true of the current state of your word processor based on the cursor in
+    the image below.
+
+##[insert Topic1Fig3 here]
+  shuffleOptions: true
+  defaultFeedback: |-
+
+    This example has the cursor has selected part of the title, so the state include
+    the fact we are in a heading, but also the fact that text is selected
+
+    If you are confused by the answers, have another look at the video about why turning it
+    off and on again works
+  options:
+    - answer: Bullet points
+      isCorrect: false
+
+    - answer: Bold type
+      isCorrect: false
+
+    - answer: Heading
+      isCorrect: true
+
+    - answer: Selection
+      isCorrect: true
+
+- typeName: multipleChoice
+  prompt: |-
+    If you try to load an appication and you get a "dll load error", what is likely to be the problem?
+  shuffleOptions: true
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on Applications
+  options:
+    - answer: There is a problem with our application
+      isCorrect: true
+      feedback: |-
+        Yes a dll is a file (on windows) containing additional code that i used by your application.
+        If one of your application's dlls cannot be found, you may need to reinstall your application
+    - answer: One of your documents is missing
+      isCorrect: false
+      feedback: |-
+        A dll is a file, but not a document. It is one of the many files that is required to run an application
+    - answer: Your computer as a hardware fault
+      isCorrect: false
+      feedback: |-
+        This is possible but unlikely. Hardware faults are rare, so a file error is more
+        likely to be due to a softare problem.
+
+- typeName: multipleChoice
+  prompt: Why are files locked?
+  shuffleOptions: false
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on Files
+  options:
+    - answer: To make sure that two applications don't try to write data to the file at the same time
+      isCorrect: true
+      feedback: |-
+        That's right. If two applications try to write to the same file at the same time it could become
+        corrupted, because the data from each application will be mixed together. When one application
+        opens a file, it becomes locked until the application closes it, so that another application
+        cannot open it.
+    - answer: So other people cannot read your private files
+      isCorrect: false
+      feedback: |-
+        This is an important feature of files, but is called permisssions, not locking
+
+- typeName: multipleChoice
+  prompt: |-
+    When you buy a product on an online shopping site, how do the states of the site change?
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on e-Commerce sites
+  shuffleOptions: true
+  options:
+    - answer: Mostly through user input
+      isCorrect: true
+      feedback: |-
+        Yes, you are mostly making decisions that change the state, but some
+        states are due to external inputs, like credit card approval.
+
+    - answer: Mostly not through user input
+      isCorrect: false
+      feedback: |-
+        Most of the time, when you are shopping online the state of the site
+        will change because you have done something, like selecting a product
+
+    - answer: Only through user input
+      isCorrect: false
+      feedback: |-
+        Most of the time, when you are shopping online, you are doing things that change
+        the state, but some times the state will change for other reasons, can you think
+        of an example?
+
+    - answer: Never through user input
+      isCorrect: false
+      feedback: |-
+        Most of the time, when you are shopping online the state of the site
+        will change because you have done something, like selecting a product
+
+- typeName: multipleChoice
+  prompt: |-
+    What is a resource file?
+  defaultFeedback: |-
+    If you are confused by the answers, have another look at the video on Applications
+  shuffleOptions: false
+  options:
+    - answer: It contains the code of an application. 
+      isCorrect: false
+      feedback: |-
+        A resource file is not code, have a look back at the video on applications
+    - answer: It is a document
+      isCorrect: false
+      feedback: |-
+        A resource file is not a document, have a look back at the video on applications
+    - answer: It could be either code or a document
+      isCorrect: false
+      feedback: |-
+        Have a look back at the video on applications
+    - answer: It is neither code nor a document
+      isCorrect: true
+      feedback: |-
+        That's right. Resource files are data files that form part of an application, not a document
